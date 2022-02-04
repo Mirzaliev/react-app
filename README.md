@@ -1,46 +1,20 @@
-# Getting Started with Create React App
+###### https://developer.atlassian.com/console/myapps/d88cb069-beb0-40a8-bee7-ad3847c15228/overview/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###### https://auth.atlassian.com/oauth/token
 
-## Available Scripts
+``
+{ 
+     "grant_type": "authorization_code",
+     "client_id": "ZbHtubcuwV0jg2xy3fUFIRRvj2WMdjxn",
+     "client_secret": "HxLuR6EgPz4zDSjcjnpLf4RhYANsccl7ePx5Gee8EAm3APNfUjMaEebiabTP2UkJ",
+     "code": "F80UFgrNn2RnS5O2",
+     "redirect_uri": "http://localhost:3000/"
+}
+``
 
-In the project directory, you can run:
 
-### `npm start`
+###### https://api.atlassian.com/me
+Authorization Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16bERNemsxTVRoRlFVRTJRa0ZGT0VGRk9URkJOREJDTVRRek5EZzJSRVpDT1VKRFJrVXdNZyJ9.eyJodHRwczovL2F0bGFzc2lhbi5jb20vb2F1dGhDbGllbnRJZCI6IlpiSHR1YmN1d1YwamcyeHkzZlVGSVJSdmoyV01kanhuIiwiaHR0cHM6Ly9hdGxhc3NpYW4uY29tL2VtYWlsRG9tYWluIjoibWFpbC5ydSIsImh0dHBzOi8vYXRsYXNzaWFuLmNvbS9zeXN0ZW1BY2NvdW50SWQiOiI2MWZjZWUyODMwZjZiODAwNmFhOThjYTMiLCJodHRwczovL2F0bGFzc2lhbi5jb20vc3lzdGVtQWNjb3VudEVtYWlsRG9tYWluIjoiY29ubmVjdC5hdGxhc3NpYW4uY29tIiwiaHR0cHM6Ly9hdGxhc3NpYW4uY29tL3ZlcmlmaWVkIjp0cnVlLCJodHRwczovL2F0bGFzc2lhbi5jb20vZmlyc3RQYXJ0eSI6ZmFsc2UsImh0dHBzOi8vYXRsYXNzaWFuLmNvbS8zbG8iOnRydWUsImlzcyI6Imh0dHBzOi8vYXRsYXNzaWFuLWFjY291bnQtcHJvZC5wdXMyLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1YmQxYzYwMGJmZTZiYTQyNjNmNzFhN2YiLCJhdWQiOiJhcGkuYXRsYXNzaWFuLmNvbSIsImlhdCI6MTY0Mzk3MjI4MywiZXhwIjoxNjQzOTc1ODgzLCJhenAiOiJaYkh0dWJjdXdWMGpnMnh5M2ZVRklSUnZqMldNZGp4biIsInNjb3BlIjoibWFuYWdlOmppcmEtY29uZmlndXJhdGlvbiBtYW5hZ2U6amlyYS1wcm9qZWN0IG1hbmFnZTpqaXJhLXdlYmhvb2sgd3JpdGU6amlyYS13b3JrIHJlYWQ6amlyYS13b3JrIHJlYWQ6amlyYS11c2VyIG1hbmFnZTpqaXJhLWRhdGEtcHJvdmlkZXIifQ.k1Kpp-5mPVGFpDBdt8FFffHpeuvQGvWouiyeKl7Pl5eKSAnStnO5fq5t7I3NRDFEuOch8hMQmj6_1rwYawTXqyx5ZqDdpqGNUe0-DRNGlPX9t89wrWGjdeT85yJRb2yyjffoWLPoVyI-ldL-tVr7DiRQkPCRJy6EViDpGN_t5jupJZlrhnVxCNdrnzPL6WepOxBnt33vstLhHQKRHWoq_Fbd-FBgMqFEHxNSTqm_39bxxyYM-JNi7JNiZY2ELG_rhvmqATN3UfGFzG4O0t-YJ9C-TOFmYKLkZ_Q5aYrPtjp96wwhwHCngfyeBsTNuStvNcT9a8C8wnvgYklKX3RWrA
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+###### react-typescript-material
