@@ -1,22 +1,27 @@
-import {StoreState} from "./AppStore";
+import { AppContextProps } from './AppContext';
+import { Actions } from './actions';
 
-export interface ActionReducer {
-  [key: string]: string | object
-}
+export type ChangeThemeAction = {
+  type: Actions.CHANGE_THEME;
+  payload: string;
+};
 
-const AppReducer = (state: StoreState, action: ActionReducer) => {
+export type SetUserType = {
+  type: Actions.SET_USER;
+  payload: {
+    id: number;
+    name: string;
+  };
+};
 
-  switch (action.type || action.action) {
-    case 'CURRENT_USER':
+export type ActionTypes = ChangeThemeAction | SetUserType;
 
+const AppReducer = (state: AppContextProps, action: ActionTypes) => {
+  switch (action.type) {
+    case Actions.CHANGE_THEME:
       return {
         ...state,
-        currentUser: action?.currentUser || action?.payload,
-      };
-    case 'LOG_IN':
-      return {
-        ...state,
-        isAuth: true,
+        themeState: action.payload,
       };
     default:
       return state;

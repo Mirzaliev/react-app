@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React, { FC } from 'react';
+import style from './Redirect.module.sass';
+import { Loading } from '../../components';
 
-
-class Redirect extends Component {
-  render() {
-    return (
-        <div>
-
-        </div>
-    );
-  }
-}
-
+const Redirect: FC = () => {
+  return (
+    <div className={style.redirect}>
+      <Loading />
+    </div>
+  );
+};
 
 export default Redirect;

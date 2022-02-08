@@ -1,0 +1,6 @@
+export enum Actions {
+  CHANGE_THEME = 'CHANGE_THEME',
+  SET_USER = 'SET_USER',
+  START_LOADING = 'START_LOADING',
+  ERROR = 'ERROR'
+}

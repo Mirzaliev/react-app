@@ -6,6 +6,6 @@ export const Home = (): JSX.Element => {
 
   const [searchParams, setSearchParams] = useSearchParams();
   console.log(searchParams.get('code'));
-  return (<div className={style.Home}>k</div>);
+  return (<div className={style.Home}>sdgfsdfsdfdfsdf</div>);
   
 };

@@ -1,3 +1,6 @@
-import { AppStore, AppContext, withAppStoreHOC, useStore } from './AppStore';
+import { AppContext } from './AppContext';
+import { AppProvider } from './AppProvider';
+import AppReducer from './AppReducer';
+import { Actions } from './actions';
 
-export { AppStore as default, AppStore, AppContext, withAppStoreHOC, useStore };
+export type { AppProvider as default, AppReducer, AppContext, Actions };

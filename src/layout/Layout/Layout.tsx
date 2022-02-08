@@ -5,8 +5,6 @@ import { NavLink, Outlet } from 'react-router-dom';
 export const Layout = (): JSX.Element => {
   return (
     <Fragment>
-      <h1>React Router</h1>
-
       <nav
         style={{
           borderBottom: 'solid 1px',
