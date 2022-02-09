@@ -20,3 +20,4 @@ Authorization Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16bERNemsxTVR
 ###### react-typescript-material
 
 ###### https://github.com/auth0/auth0-react
+###### https://www.npmjs.com/package/react-inlinesvg
