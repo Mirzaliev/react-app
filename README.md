@@ -21,3 +21,5 @@ Authorization Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16bERNemsxTVR
 
 ###### https://github.com/auth0/auth0-react
 ###### https://www.npmjs.com/package/react-inlinesvg
+###### svgr -d ./src/components/ui/Icons ./src/assets/icons
+
