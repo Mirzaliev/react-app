@@ -31,3 +31,8 @@ export interface IconState {
   hasError: boolean;
   isLoading: boolean;
 }
+
+export enum IconNames {
+  ACTIVITY = 'activity',
+  AIRPLAY = 'airplay',
+}

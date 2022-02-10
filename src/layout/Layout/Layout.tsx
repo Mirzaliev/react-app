@@ -19,7 +19,7 @@ export const Layout = (): JSX.Element => {
         </NavLink>
       </nav>
 
-      <main style={{ padding: '1rem 0' }}>
+      <main>
         <Outlet />
       </main>
     </Fragment>
