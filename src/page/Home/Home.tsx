@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
-import style from './Home.module.css';
+import './Home.module.css';
+import { css, jsx } from '@emotion/react';
+import Button from '@atlaskit/button';
+
 
 export const Home = (): JSX.Element => {
-  return <div className={style.add}>1</div>;
+
+  const [color, setColor] = useState<string>('red');
+
+  return (<a href="#" css={css`
+      padding: 32px;
+      background-color: hotpink;
+      font-size: 24px;
+      border-radius: 4px;
+      &:hover {
+        color: ${color};
+      }
+    `}>fdsfsdfdsfsdfs</a>);
 };
