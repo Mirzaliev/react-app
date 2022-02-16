@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import style from './Layout.module.sass';
 import { NavLink, Outlet } from 'react-router-dom';
+import { useTheme as _useTheme } from "../../components/ui/theme/utils/useThemeContext";
+
 
 export const Layout = (): JSX.Element => {
   const [active, setActive] = React.useState(0);
-
+   const gggggg = _useTheme({ mode: 'light' });
   const onChangeValue = (value: number) => {
     setActive(value);
-
   };
 
   return (
