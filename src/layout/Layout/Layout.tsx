@@ -1,15 +1,19 @@
 import React, { Fragment } from 'react';
 import style from './Layout.module.sass';
 import { NavLink, Outlet } from 'react-router-dom';
-import { useTheme as _useTheme } from "../../components/ui/theme/utils/useThemeContext";
+import { useTheme } from "../../components/ui/theme/Theme";
 
 
 export const Layout = (): JSX.Element => {
-  const [active, setActive] = React.useState(0);
-   const gggggg = _useTheme({ mode: 'light' });
-  const onChangeValue = (value: number) => {
-    setActive(value);
+
+  const { theme, setTheme } = useTheme();
+
+
+
+  const onChangeValue = (value: string) => {
+    setTheme(value);
   };
+
 
   return (
     <Fragment>
@@ -34,8 +38,8 @@ export const Layout = (): JSX.Element => {
           <input
             type="radio"
             id="111111"
-            checked={active === 0}
-            onChange={() => onChangeValue(0)}
+            checked={theme === 'dark'}
+            onChange={() => onChangeValue('dark')}
           />
           <label style={{ marginRight: 10 }} htmlFor="111111">
             Черная
@@ -44,8 +48,8 @@ export const Layout = (): JSX.Element => {
           <input
             type="radio"
             id="222222"
-            checked={active === 1}
-            onChange={() => onChangeValue(1)}
+            checked={theme === 'light'}
+            onChange={() => onChangeValue('light')}
           />
           <label htmlFor="222222">Белая</label>
         </div>

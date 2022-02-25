@@ -17,7 +17,7 @@ type CreateThemeReturnType<ThemeTokens,ThemeProps > = {
 };
 
 export function createTheme<ThemeTokens, ThemeProps>(
-  defaultGetTokens: GetThemeTokenFn<ThemeTokens, ThemeProps>
+  defaultGetTokens: GetThemeTokenFn<ThemeTokens, ThemeProps>,
 ): CreateThemeReturnType<ThemeTokens,ThemeProps> {
 
   const noopThemeFn: ThemeProp<ThemeTokens, ThemeProps>

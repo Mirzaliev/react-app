@@ -1,12 +1,12 @@
-import type { Theme, ThemeProps } from '../types';
-import { DEFAULT_THEME_MODE, THEME_MODES } from "../constants";
+import { DEFAULT_THEME_MODE } from "../constants";
 
 
-export default function currentTheme(props?: ThemeProps): Theme {
-  if(props && props.theme) {
-    if ('mode' in props.theme && THEME_MODES.includes(props.theme.mode)) {
-      return props.theme as Theme;
-    }
+export default function currentTheme(key: string, fallback: string = DEFAULT_THEME_MODE) {
+  let theme;
+  try {
+    theme = localStorage.getItem(key) || undefined;
+  } catch (e) {
+    // Unsupported
   }
-  return { mode: DEFAULT_THEME_MODE };
+  return theme || fallback;
 }

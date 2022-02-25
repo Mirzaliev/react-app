@@ -1,4 +1,4 @@
-import React, {ReactNode, useCallback, useEffect, useMemo, useReducer} from 'react';
+import React, { ReactNode, useCallback, useEffect, useMemo, useReducer } from 'react';
 import { AuthService } from '../../services/auth';
 import { initialAuthState } from './auth0-state';
 import Auth0Reducer from './auth0-reducer';
@@ -14,7 +14,7 @@ const Auth0Provider = ({ children }: Auth0ProviderProps): JSX.Element => {
   const [state, dispatch] = useReducer(Auth0Reducer, initialAuthState);
 
   useEffect(() => {
-    console.log('Auth0Provider запускается ', new Date());
+    //console.log('Auth0Provider запускается ', new Date());
   }, []);
 
   const loginWithJira = useCallback( (opts?: object) => {
